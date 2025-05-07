@@ -1,0 +1,44 @@
+1. string ko array me convert krne ke liye method hai split('')
+example==> let x='12';
+    console.log(x.split('')); // output==> ['1','2']
+
+2. array ko string me convert krme ke liye method hai toString() 
+
+3. join() method is used to remove extra comma 
+example her==>
+const fruits = ['Apple', 'Banana', 'Orange'];
+
+// Default (comma separator)
+console.log(fruits.join()); // "Apple,Banana,Orange"
+
+// With space separator
+console.log(fruits.join(' ')); // "Apple Banana Orange"
+
+// With hyphen separator
+console.log(fruits.join(' - ')); // "Apple - Banana - Orange"
+
+// With empty string separator
+console.log(fruits.join('')); // "AppleBananaOrange"
+
+//pure function
+console.log(
+  "Pure Functions Characteristics: 1.Always returns the same output for the same input. 2. No side effects (doesn't modify external state). 3.Doesn't depend on external state"
+);
+// Pure function - no side effects, same output for same input
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3)); // Always returns 5
+
+function doubleArray(arr) {
+  return arr.map(item => item * 2);
+}
+
+const original = [1, 2, 3];
+const doubled = doubleArray(original);
+console.log(original); // [1, 2, 3] (unchanged)
+console.log(doubled);  // [2, 4, 6]
+
+//impure function
+console.log("Impure function: Characteristics: May produce different outputs for the same input Has side effects (modifies external state)Depends on external state");

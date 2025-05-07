@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+  <body>
+    <h1>Matrix</h1>
+    <pre id="console"></pre>
+    <button id="btn">Click Me!</button>
+    <br />
+    <br />
+
+    <button id="moveStar">MOVE STAR</button>
+    <br />
+    <br />
+
+    <button id="MoveLeft">Move Left</button>
+    <button id="MoveRight">Move Right</button>
+
+    <!-- Key Down Event -->
+    <!-- <p>Press a key in the input field:</p>
+    <input type="text" onkeydown="myFunction()" />
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        document.getElementById('demo').innerHTML =
+          'You pressed a key inside the input field';
+      }
+    </script> -->
+    <!-- example 2 -->
+    <!-- <button id="btnclick" onkeydown="printStar()">key down </button>
+    <script>
+      function printStar() {
+        let m=document.getElementById('btnclick');
+        m.addEventListener('click', () => {
+         for(let i=0;i<5;i++){
+           console.log("*")
+         }
+        });
+      }
+    </script> -->
+
+    <!-- <script type="module" src="script.js"></script> -->
+    <!-- <script type="module" src="matrix.js"></script> -->
+    <!-- <script type="module" src="revision.js"></script> -->
+    <!-- <script type="module" src="matrixRevision.js"></script> -->
+    <!-- <script type="module" src="pureFunction.js"></script> -->
+    <!-- <script type="module" src="impureFunction.js"></script> -->
+    <!-- <script type="module" src="matrixNumerical.js"></script> -->
+    <!-- <script type="module" src="functionsType.js"></script> -->
+    <!-- <script type="module" src="question.js"></script> -->
+    <!-- <script type="module" src="traversal.js"></script> -->
+    <!-- <script type="module" src="matrixGenerate.js"></script> -->
+    <!-- <script type="module" src="matrixRotate.js"></script> -->
+    <script type="module" src="nTimesRotateMatrix.js"></script>
+    <script type="module" src="moveStar.js"></script>
+    <!-- <script>
+      function rotateMatrixClockWise(mat, k) {
+        let n = mat.length;
+        k = k % 4;
+        while (k) {
+          for (let i = 0; i < mat.length; i++) {
+            for (let j = i; j < mat.length; j++) {
+              [mat[i][j], mat[j][i]] = [mat[j][i], mat[i][j]];
+            }
+          }
+          for (let i = 0; i < mat.length; i++) {
+            mat[i].reverse();
+          }
+          k--;
+        }
+        return mat;
+      }
+      console.log(
+        rotateMatrixClockWise(
+          [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+          ],
+          3
+        )
+      );
+    </script> -->
+  </body>
+</html>
